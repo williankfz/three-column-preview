@@ -1,0 +1,102 @@
+:root{
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+  --big-shoulders: 'Big Shoulders Display', cursive;
+  --lexend: 'Lexend Deca', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+
+body{
+  font-size: 15px;
+  font-weight: 400;
+  font-family: var(--lexend);
+  background: var(--very-light-gray-background-headings-buttons);
+}
+
+.container{
+  display: flex;
+  width: 1200px;
+  max-width: 100%;
+  margin: 100px auto;
+}
+
+.sedans,.suvs,.luxury{
+  padding: 40px;
+  color: var(--transparent-white-paragraphs);
+}
+
+.sedans{
+  background: var(--bright-orange);
+}
+
+.sedans a{
+  color: var(--bright-orange);
+}
+
+.suvs{
+  background: var(--dark-cyan);
+}
+
+.suvs a{
+  color: var(--dark-cyan);
+}
+
+.luxury{
+  background: var(--very-dark-cyan);
+}
+
+.luxury a{
+  color: var(--very-dark-cyan);
+}
+
+.sedans a:hover, .suvs a:hover, .luxury a:hover{
+  background: transparent;
+  border: 1px solid var(--very-light-gray-background-headings-buttons);
+  color: var(--very-light-gray-background-headings-buttons);
+}
+
+h1{
+  color: var(--very-light-gray-background-headings-buttons);
+  margin: 30px 0px;
+}
+
+p{
+  width: 65%;
+  max-width: 100%;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+  width: 200px;
+  text-align: center;
+  background: var(--very-light-gray-background-headings-buttons);
+  padding: 15px;
+  border-radius: 50px;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container{
+    flex-direction: column;
+  }
+}
+
+.attribution { font-size: 11px; text-align: center; margin: 0 auto; }
+.attribution a { color: hsl(228, 45%, 44%);margin: 0 auto; }
